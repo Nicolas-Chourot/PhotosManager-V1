@@ -17,7 +17,7 @@
         $title = $_POST["Title"];
         $description = $_POST["Description"];
         TablePhotos()->updatePhoto($_POST);            
-        redirect('listPhotos.php');
+        redirect('PhotoDetails.php?id='.$_POST["Id"]);
     } else {
         $title =  $photo["Title"];
         $description = $photo["Description"];

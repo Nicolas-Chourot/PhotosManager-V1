@@ -10,6 +10,7 @@
     $userAvatarGUID = $_SESSION["loggedUser"]["AvatarGUID"];
     $userPassword = "";
     $userConfirm = "";
+    
     $antiForgeryToken = "";
     if (!isset($_SESSION["currentAntiForgeryToken"]))
         $_SESSION["currentAntiForgeryToken"] = getAntiForgeryToken();

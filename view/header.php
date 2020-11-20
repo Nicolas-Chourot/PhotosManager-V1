@@ -1,7 +1,7 @@
 <?php
     include_once "utilities/htmlHelper.php";
     include_once "DAL/users.php";
-    $pageTitle = "Mon site Web";
+
     if (!isset($viewTitle)) $viewTitle = "";
     $username = "";
     $profilLink = "";

@@ -1,7 +1,7 @@
 <?php
 	include 'view/header.php';
     include 'view/footer.php';
-    if (!isset($pageTitle)) $pageTitle = "";
+    if (!isset($pageTitle)) $pageTitle = "Photos Manager";
     if (!isset($viewHead)) $viewHead = "";
     if (!isset($viewStyle)) $viewStyle ="";
     if (!isset($viewFooter)) $viewFooter = "";

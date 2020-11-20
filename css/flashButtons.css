@@ -1,0 +1,95 @@
+/*
+    Classes css pour induire le comportant de bouton flash (3 états)
+
+    Il s'y trouve les classes pour les boutons flash CRUD
+        - PLUS
+        - EDIT
+        - DELETE
+        - DETAILS
+        - MOVELEFT
+        - MOVERIGHT
+    Dépendance avec les images se trouvant dans le répertoire icons
+
+    auteur : Nicolas Chourot 
+    
+*/
+
+.flashButton {
+    width:38px;
+    height:38px;
+    background-size: 38px 38px;
+    cursor: pointer;
+}
+
+.iconPlus {
+    background: url("icons/ICON_Add_Neutral.png") no-repeat;
+}
+.iconPlus:hover {
+    background: url("icons/ICON_Add_Over.png") no-repeat;
+}
+.iconPlus:active {
+    background: url("icons/ICON_Add_Click.png") no-repeat;
+}
+
+
+.iconEdit {
+    background: url("icons/ICON_Edit_Neutral.png") no-repeat;
+}
+.iconEdit:hover {
+    background: url("icons/ICON_Edit_Over.png") no-repeat;
+}
+.iconEdit:active {
+    background: url("icons/ICON_Edit_Click.png") no-repeat;
+}
+
+.iconDelete {
+    background: url("icons/ICON_Delete_Neutral.png") no-repeat;
+}
+.iconDelete:hover {
+    background: url("icons/ICON_Delete_Over.png") no-repeat;
+}
+.iconDelete:active {
+    background: url("icons/ICON_Delete_Click.png") no-repeat;
+}
+
+
+.iconDetails {
+    background: url("icons/ICON_Details_Neutral.png") no-repeat;
+}
+.iconDetails:hover {
+    background: url("icons/ICON_Details_Over.png") no-repeat;
+}
+.iconDetails:active {
+    background: url("icons/ICON_Details_Click.png") no-repeat;
+}
+
+.iconLeft {
+    background: url("icons/ICON_Left_Neutral.png") no-repeat;
+}
+.iconLeft:hover {
+    background: url("icons/ICON_Left_Over.png") no-repeat;
+}
+.iconLeft:active {
+    background: url("icons/ICON_Left_Click.png") no-repeat;
+}
+.iconLeftDisable {
+    background: url("icons/ICON_Left_disable.png") no-repeat;
+}
+
+.iconRight {
+    background: url("icons/ICON_Right_Neutral.png") no-repeat;
+}
+.iconRight:hover {
+    background: url("icons/ICON_Right_Over.png") no-repeat;
+}
+.iconRight:active {
+    background: url("icons/ICON_Right_Click.png") no-repeat;
+}
+.iconRightDisable {
+    background: url("icons/ICON_Right_disable.png") no-repeat;
+}
+
+
+
+
+

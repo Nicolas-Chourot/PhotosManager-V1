@@ -22,7 +22,7 @@
                     name="Title" 
                     class="form-control" 
                     placeholder="Titre de la photo..."
-                    value='$title'>
+                    value="$title">
             <label for="Description">Description</label>
             <textarea   type="text"     
                         id="Description"     

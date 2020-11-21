@@ -16,7 +16,7 @@
         $deleteButton = "<div></div>";
         if ($showDeleteButtons) {
             if (!$user["Admin"])
-                $deleteButton = html_flashButton("deleteUser iconDelete", "deleteUser_$id", "Effacer $name", $position = 'top');
+                $deleteButton = html_flashButton("deleteUser iconDelete", "deleteUser_$id", "Effacer $name", 'right');
         }
         $viewContent.= <<<HTML
         $avatarImage

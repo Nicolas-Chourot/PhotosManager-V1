@@ -153,3 +153,16 @@ class ValidationProvider{
         }
     }
 }
+
+function OpenConfirmDelete(message, link) {
+    $.confirm({
+        title: "Confirmation de retrait",
+        content: message + '?',
+        buttons: {
+            confirmer: function () {
+                document.location = link;
+            },
+            annuler: {},
+        }
+    });
+}

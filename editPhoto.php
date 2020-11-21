@@ -19,7 +19,7 @@
         TablePhotos()->updatePhoto($_POST);            
         redirect('PhotoDetails.php?id='.$_POST["Id"]);
     } else {
-        $title =  $photo["Title"];
+        $title = $photo["Title"];
         $description = $photo["Description"];
         $creationDate = $photo["CreationDate"];
         $keywords = $photo["Keywords"];
@@ -44,7 +44,7 @@
                         name="Title" 
                         class="form-control" 
                         placeholder="Titre de la photo..."
-                        value='$title'>
+                        value="$title">
                 <label for="Description">Description</label>
                 <textarea   type="text"     
                             id="Description"     
@@ -64,7 +64,7 @@
                 <input  type="button"   
                         class="btn btn-secondary btn-exit"  
                         value="Annuler..."
-                        onclick = "window.location ='listPhotos.php'">
+                        onclick = "window.location ='PhotoDetails.php?id=$id'">
             </form>
         </div>
         HTML;

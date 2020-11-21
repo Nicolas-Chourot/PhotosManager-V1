@@ -10,7 +10,6 @@ final class Photos extends MySQLTable {
     public $Description;
     /** VARCHAR(128) */
     public $Keywords;
-
     public $CreationDate;
     public $UserId;
     public $Shared;

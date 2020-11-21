@@ -12,9 +12,10 @@ if (isset($_GET["id"])){
     $deletePhotoCmd = "";
     $backCmd = html_flashButtonLink('iconLeft','listPhotos.php', 'Retour...','right');
     $photo = TablePhotos()->get($id);
+    $title = $photo["Title"];
     if ($photo["UserId"] == $_SESSION["loggedUser"]["Id"] || $_SESSION["loggedUser"]["Admin"] == 1) {
         $editPhotoCmd = html_flashButtonLink('iconEdit','editPhoto.php?id='.$id, 'Modifer...','right');
-        $deletePhotoCmd = html_Confirm("Retrait de photo<hr>", "Voulez-vous vraiment effacer la photo <br><b>".$photo["Title"]."</b>?", "deletePhoto.php?id=".$id);
+        $deletePhotoCmd = html_flashButton("deletePhotoCmd iconDelete", "deletePhoto_$id", "Effacer la photo $title", 'bottom');
     }
  
     $url = TablePhotos()->getPhotoUrl($photo["GUID"]);
@@ -50,7 +51,7 @@ if (isset($_GET["id"])){
         </div>
     <div>
     HTML;
-    $viewScript = "js/confirmDeletePhoto.js";
+    $viewScript = "js/photoDetails.js";
     include "view/master.php";
 } else {
     illegalAccessRedirection();

@@ -149,7 +149,7 @@ function html_flashButton($flashButtonType, $id, $tooltip, $position = 'top'){
     $html .= '</div>';
     return $html;
 }
-
+/* depricated: not working correctly with quote and double quotes within title
 function html_Confirm($title, $message, $link) {
     $html = <<<HTML
     <div class='flashButton iconDelete' 
@@ -160,7 +160,7 @@ function html_Confirm($title, $message, $link) {
     HTML;
     return $html;
 }
-
+*/
 function html_makeRating($name, $value, $readOnly = true){
     $disableAttribute = $readOnly?"disabled":"";
     $html = "<input type='radio' name='$name' class='RatingBar' value='$value' $disableAttribute/>";

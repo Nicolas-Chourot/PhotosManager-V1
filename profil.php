@@ -10,7 +10,7 @@
     $userAvatarGUID = $_SESSION["loggedUser"]["AvatarGUID"];
     $userPassword = "";
     $userConfirm = "";
-    
+
     $antiForgeryToken = "";
     if (!isset($_SESSION["currentAntiForgeryToken"]))
         $_SESSION["currentAntiForgeryToken"] = getAntiForgeryToken();
@@ -27,7 +27,7 @@
                 $updatedUser = TableUsers()->changeProfil($_POST);
                 if ($updatedUser != null) {
                         $_SESSION["loggedUser"] = $updatedUser;
-                        header('location:listUsers.php'); exit();
+                        header('location:listPhotos.php'); exit();
                 } else
                         $EmailError = "<span style='color:red'>Courriel en conflit avec celui d'un autre usager</span><br>";
         } else
@@ -92,7 +92,7 @@
             <input  type="button"   
                     class="btn btn-secondary btn-exit"  
                     value="Annuler..."
-                    onclick = "window.location ='listUsers.php'">
+                    onclick = "window.location ='listPhotos.php'">
         </form>
     </div>
     HTML;
